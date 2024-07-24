@@ -28,6 +28,7 @@ There are four variants of Florence-2 available:
 2. Florence-2-large-ft: Finetuned model on a collection of downstream tasks (0.77B parameters)
 3. Florence-2-base: Pretrained model with FLD-5B (0.23B parameters)
 4. Florence-2-base-ft: Finetuned model on a collection of downstream tasks (0.23B parameters)
+5. florence2-large-ft-gufeng_v3: https://huggingface.co/F16/florence2-large-ft-gufeng_v3
 
 
 ## Setup
@@ -113,6 +114,8 @@ The project includes a Command Line Interface (CLI) for easy interaction. To use
 ```bash
 python src/cli.py --model-id <path_to_model> --image-path <path_to_image> --task <task_name> [--text-input <additional_text>] [--output-dir <output_directory>]
 ```
+批量bs运行
+python Florence-2_bs.py        
 
 Arguments:
 - `--model-id`: Path to the model (required)
